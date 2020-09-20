@@ -1,0 +1,58 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.7rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  margin: 5% auto;
+  width: 40%;
+  display: grid;
+  grid-template-columns: (10% 10% 15% 10%);
+  grid-gap: 2rem;
+}
+
+.gridy-child:nth-child(1) {
+  color: rgb(42, 42, 252);
+  font-weight: bold;
+  writing-mode: sideways-rl;
+  grid-column: 1 / 2;
+  transform: rotate(200deg);
+}
+
+.gridy-child:nth-child(2) {
+  color: rgb(2, 2, 43);
+  font-weight: bold;
+  writing-mode: sideways-lr;
+  grid-column: 2 / 3;
+  transform: rotate(200deg);
+}
+
+.gridy-child:nth-child(3) {
+  color: rgb(0, 0, 0);
+  writing-mode: horizontal-rl;
+  grid-column: 3 / 4;
+  transform: rotate(200deg) rotateZ(180.1deg);
+}
+
+.gridy-child:nth-child(4) {
+  color: rgb(42, 42, 252);
+  font-weight: bold;
+  writing-mode: sideways-rl;
+  grid-column: 4 / 5;
+  transform: rotate(200deg);
+  border-right: 1rem solid chartreuse;
+}
