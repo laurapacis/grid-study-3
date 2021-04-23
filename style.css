@@ -17,7 +17,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-main {
+.gridy-parent {
   margin: 5% auto;
   width: 40%;
   display: grid;
@@ -55,4 +55,11 @@ main {
   grid-column: 4 / 5;
   transform: rotate(200deg);
   border-right: 1rem solid chartreuse;
+}
+
+footer {
+  display: block;
+  float: right;
+  margin-right: 200px;
+  font-style: italic;
 }
